@@ -1,5 +1,6 @@
 # sistema_bancario
-Sistema de saque, depósito e extrato bancário atializado para criação de novo usuário e conta.
+Sistema de saque, depósito e extrato bancário atualizado para criação de novo usuário e conta.
+
 OBJETIVO GERAL:
 Separar as funções existentes de saque, depósito e extrato em funções. 
 Deixar o código mais modularizado, e para isso, criar funções para as operações existentes: sacar, 
@@ -9,28 +10,32 @@ funções novas: criar usuário (cliente do banco) e criar conta corrente (vincu
 SEPARAR EM FUNÇÕES
 Criar funções para todas as operações do sistema.
 Cada função deve ter uma regra na passagem de argumentos. 
+
 SAQUE
 A função saque deve receber os argumentos apenas por nome (Keyword Only). 
 Sugestão de argumentos: saldo, valor, extrato, limite, numero_saques, limite_saques. 
 Sugestão de retorno: saldo e extrato.
+
 DEPÓSITO
 A função depósito deve receber os argumentos apenas por posição (positional Only).
 Sugestão de argumentos: saldo, valor, extrato.
 Sugestão de retorno: saldo e extrato.
+
 EXTRATO
 A função extrato deve receber os argumentos apenas por posição e nome (positional Only e Keyword Only).
 Argumentos posicionais: saldo, argumentos nomeados: extrato.
 NOVAS FUNÇÕES PROPOSTAS
 Criar duas funções novas: criar usuário e criar conta corrente. Fique à vontade para criar mais funções, exemplo: listar contas.
+
 CRIAR USUÁRIO (CLIENTE)
 O programa deve armazenar os usuários em uma lista, onde um usuário é composto por: nome, data de nascimento, cpf e endereço. 
 O endereço é uma string com o formato: logradouro, numero, bairro, cidade/sigla do estado. Deve ser armazenado somente os números 
 do cpf. Não podemos cadastrar dois usuários com o mesmo cpf.
+
 CRIAR CONTA CORRENTE
 O programa deve armazenar contas em uma lista, uma conta é composta por: agência, número da conta e usuário. O número da conta é sequencial, 
 iniciando em 1. O número da agência é fixo “0001”. O usuário pode ter mais de uma conta, mas uma conta pertence a somente um usuário.
 Para vincular um usuário a uma conta, filtrar a lista de usuários buscando o número do cpf informado para cada usuário da lista.
-
 
 NOVAS FUNÇÕES ACRESCENTADAS NO SISTEMA
 
